@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {}
+    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {}
   },
   "projects": {
-    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {
+    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
+        "projectUniqueName": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
         "projectName": "WorkScheduleAPI",
-        "projectPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
+        "projectPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
         "packagesPath": "/Users/seanstilson/.nuget/packages/",
-        "outputPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI/obj/",
+        "outputPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -39,6 +39,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

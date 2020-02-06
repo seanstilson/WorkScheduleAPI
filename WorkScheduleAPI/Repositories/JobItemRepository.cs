@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using WorkScheduleAPI.Database;
 using WorkScheduleAPI.Entities;
@@ -30,6 +33,21 @@ namespace WorkScheduleAPI.Repositories
             }
 
             
+        }
+        public List<JobItem> GetJobItems(string jobType)
+        {
+            try
+            {
+                var jobs = _workContext.JobItems.Where(ji => ji.SelectedJobType == jobType).ToList();
+                return jobs;
+            }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.StackTrace);
+                return null;
+            }
+
+
         }
     }
 }

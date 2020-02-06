@@ -34,7 +34,7 @@ namespace WorkScheduleAPI.Entities
 
         public Double WallBoardFeet { get; set; }
 
-        public Double FloorBoardFeet { get; set; }
+        public Double FloorSquareFeet { get; set; }
             
         }
 }

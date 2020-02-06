@@ -27,10 +27,11 @@ namespace WorkScheduleAPI.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet()]
+        [Route("/api/JobItem/jobType/{jobType}")]
+        public List<JobItem> Get(string jobType)
         {
-            return "value";
+            return _jobItemRepository.GetJobItems(jobType);
         }
 
         // POST api/values

@@ -1,25 +1,33 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Repositories/IJobItemRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Controllers/JobScheduleController.cs">
     <Files>
-      <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Repositories/JobItemRepository.cs" Line="37" Column="16" />
-      <File FileName="WorkScheduleAPI/Repositories/IJobItemRepository.cs" Line="10" Column="11" />
+      <File FileName="WorkScheduleAPI/Controllers/WorkScheduleController.cs" Line="1" Column="1" />
+      <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="73" Column="55" />
+      <File FileName="WorkScheduleAPI/Repositories/IJobScheduleRepository.cs" Line="6" Column="44" />
+      <File FileName="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" Line="14" Column="44" />
+      <File FileName="WorkScheduleAPI/Entities/WorkScheduleItem.cs" Line="9" Column="53" />
+      <File FileName="WorkScheduleAPI/Entities/JobSchedule.cs" Line="1" Column="1" />
+      <File FileName="WorkScheduleAPI/Models/JobSchedule.cs" Line="17" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WorkScheduleAPI" expanded="True">
             <Node name="WorkScheduleAPI" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="JobScheduleController.cs" selected="True" />
+              </Node>
               <Node name="Database" expanded="True" />
               <Node name="Entities" expanded="True" />
+              <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="IJobItemRepository.cs" selected="True" />
-              </Node>
+              <Node name="Repositories" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>

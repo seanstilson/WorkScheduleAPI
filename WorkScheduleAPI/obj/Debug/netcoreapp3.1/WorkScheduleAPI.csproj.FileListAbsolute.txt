@@ -47,3 +47,5 @@
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.csproj.CopyComplete
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.dll
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.pdb
+/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

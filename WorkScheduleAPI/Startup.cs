@@ -14,6 +14,8 @@ using WorkScheduleAPI.Database;
 using Microsoft.EntityFrameworkCore;
 using WorkScheduleAPI.Repositories;
 using WorkScheduleAPI.Entities;
+using AutoMapper;
+using WorkScheduleAPI.Mappers;
 
 namespace WorkScheduleAPI
 {
@@ -32,6 +34,9 @@ namespace WorkScheduleAPI
             services.AddControllers();
             services.AddDbContext<WorkScheduleContext>(op => op.UseSqlServer(Configuration["ConnectionString:WorkScheduleDB"]));
             services.AddScoped<IJobItemRepository<JobItem>, JobItemRepository>();
+            services.AddAutoMapper(c => c.AddProfile<WorkScheduleMapping>(), typeof(Startup));
+            services.AddScoped<IWorkScheduleItemRepository<WorkScheduleItem>, WorkScheduleItemRepository>();
+            services.AddScoped<IJobScheduleRepository<JobSchedule>, JobScheduleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

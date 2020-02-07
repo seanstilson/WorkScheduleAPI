@@ -14,5 +14,10 @@ namespace WorkScheduleAPI.Models
         {
             Id = id;
         }
+
+        public Department()
+        {
+
+        }
     }
 }

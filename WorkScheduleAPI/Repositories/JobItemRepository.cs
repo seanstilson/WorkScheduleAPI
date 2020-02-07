@@ -22,7 +22,7 @@ namespace WorkScheduleAPI.Repositories
         {
             try
             {
-                _workContext.JobItems.Add(jobItem);
+                _workContext.JobItem.Add(jobItem);
                 _workContext.SaveChanges();
                 return true;
             }
@@ -38,7 +38,7 @@ namespace WorkScheduleAPI.Repositories
         {
             try
             {
-                var jobs = _workContext.JobItems.Where(ji => ji.SelectedJobType == jobType).ToList();
+                var jobs = _workContext.JobItem.Where(ji => ji.SelectedJobType == jobType).ToList();
                 return jobs;
             }
             catch (SqlException ex)

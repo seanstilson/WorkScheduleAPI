@@ -13,8 +13,8 @@ namespace WorkScheduleAPI.Models
         public DateTime WorkSchduleItemFrom { get; set; }
         public DateTime OriginalStartDate { get; set; }
         public DateTime WorkScheduleItemTo { get; set; }
-        public TimeSpan WorkSchduleItemFromTime { get; set; }
-        public TimeSpan WorkScheduleItemToTime { get; set; }
+        public int WorkSchduleItemFromTime { get; set; }
+        public int WorkScheduleItemToTime { get; set; }
         public Color Color { get; set; }
         public Department Department { get; set; }
         public Assignee Assignee { get; set; }

@@ -11,7 +11,6 @@ namespace WorkScheduleAPI.Entities
         public string ItemName { get; set; }
         public string Description { get; set; }
         public DateTime WorkSchduleItemFrom { get; set; }
-        public DateTime OriginalStartDate { get; set; }
         public DateTime WorkScheduleItemTo { get; set; }
         public int WorkSchduleItemFromTime { get; set; }
         public int WorkScheduleItemToTime { get; set; }

@@ -18,7 +18,7 @@ namespace WorkScheduleAPI.Repositories
         {
             try
             {
-                _workScheduleContext.WorkScheduleItems.Add(item);
+                _workScheduleContext.WorkScheduleItem.Add(item);
                 _workScheduleContext.SaveChanges();
                 return true;
             }

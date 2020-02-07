@@ -46,7 +46,8 @@ namespace WorkScheduleAPI.Controllers
         public void Post([FromBody]JobSchedule jobSchedule)
         {
             List<Entities.WorkScheduleItem> items = new List<Entities.WorkScheduleItem>();
-            items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.DesignItem));
+            Entities.WorkScheduleItem newitem = _mapper.Map<Entities.WorkScheduleItem>(jobSchedule.DesignItem);
+            items.Add(newitem);
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.ProductionItem));
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.ReviewItem));
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.TransportationItem));

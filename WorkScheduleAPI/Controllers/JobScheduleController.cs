@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WorkScheduleAPI.Models;
 using WorkScheduleAPI.Repositories;
@@ -29,21 +30,27 @@ namespace WorkScheduleAPI.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<IEnumerable<JobSchedule>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(new List<JobSchedule>());
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<JobSchedule> Get(int id)
         {
-            return "value";
+            return Ok(new JobSchedule());
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]JobSchedule jobSchedule)
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Post([FromBody]JobSchedule jobSchedule)
         {
             bool saved = false;
 
@@ -57,7 +64,7 @@ namespace WorkScheduleAPI.Controllers
             if (!saved)
             {
                 Debug.WriteLine("Error saving the job schedule");
-                return;
+                return BadRequest();
             }
                 
             List<Entities.WorkScheduleItem> items = new List<Entities.WorkScheduleItem>();
@@ -69,7 +76,6 @@ namespace WorkScheduleAPI.Controllers
 
             items.ForEach(i =>
             {
-               
                 saved = _workItemRepository.InsertWorkScheduleItem(i);
                 if (!saved)
                 {
@@ -77,8 +83,12 @@ namespace WorkScheduleAPI.Controllers
                     return;
                 }
                     
-            }); 
+            });
 
+            if (!saved)
+                return BadRequest();
+
+            return Ok();
         }
 
         // PUT api/values/5

@@ -37,6 +37,8 @@ namespace WorkScheduleAPI
             services.AddAutoMapper(c => c.AddProfile<WorkScheduleMapping>(), typeof(Startup));
             services.AddScoped<IWorkScheduleItemRepository<WorkScheduleItem>, WorkScheduleItemRepository>();
             services.AddScoped<IJobScheduleRepository<JobSchedule>, JobScheduleRepository>();
+
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +59,9 @@ namespace WorkScheduleAPI
             {
                 endpoints.MapControllers();
             });
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }

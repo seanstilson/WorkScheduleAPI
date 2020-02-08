@@ -45,6 +45,22 @@ namespace WorkScheduleAPI.Controllers
         [HttpPost]
         public void Post([FromBody]JobSchedule jobSchedule)
         {
+            bool saved = false;
+
+            Entities.JobSchedule job = new Entities.JobSchedule
+            {
+                JobItemId = jobSchedule.JobItemId,
+                JobScheduleId = jobSchedule.Id
+            };
+
+            saved = _jobScheduleRepository.InsertJobSchedule(job);
+            if (!saved)
+            {
+                Debug.WriteLine("Error saving the job schedule");
+                return;
+            }
+                
+
             List<Entities.WorkScheduleItem> items = new List<Entities.WorkScheduleItem>();
             Entities.WorkScheduleItem newitem = _mapper.Map<Entities.WorkScheduleItem>(jobSchedule.DesignItem);
             items.Add(newitem);
@@ -52,7 +68,7 @@ namespace WorkScheduleAPI.Controllers
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.ReviewItem));
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.TransportationItem));
 
-            bool saved = false;
+            
             items.ForEach(i =>
             {
                
@@ -65,15 +81,7 @@ namespace WorkScheduleAPI.Controllers
                     
             });
 
-            Entities.JobSchedule job = new Entities.JobSchedule
-            {
-                JobItemId = jobSchedule.JobItemId,
-                JobScheduleId = jobSchedule.Id
-            };
-
-            saved = _jobScheduleRepository.InsertJobSchedule(job);
-            if (!saved)
-                Debug.WriteLine("Error saving the job schedule");
+            
 
         }
 

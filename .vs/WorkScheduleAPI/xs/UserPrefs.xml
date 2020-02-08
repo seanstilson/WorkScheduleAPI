@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Controllers/JobScheduleController.cs">
     <Files>
       <File FileName="WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" Line="13" Column="95" />
-      <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="91" Column="29" />
+      <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="39" Column="1" />
       <File FileName="WorkScheduleAPI/Models/WorkScheduleItem.cs" Line="20" Column="1" />
       <File FileName="WorkScheduleAPI/Models/Assignee.cs" Line="7" Column="1" />
       <File FileName="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" Line="30" Column="1" />
       <File FileName="WorkScheduleAPI/Controllers/WorkScheduleController.cs" Line="39" Column="1" />
       <File FileName="WorkScheduleAPI/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Startup.cs" Line="41" Column="43" />
+      <File FileName="WorkScheduleAPI/Startup.cs" Line="62" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +20,9 @@
                 <Node name="FrameworkReferences" expanded="True" />
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="JobScheduleController.cs" selected="True" />
+              </Node>
               <Node name="Database" expanded="True" />
               <Node name="Entities" expanded="True" />
               <Node name="Mappers" expanded="True" />
@@ -28,7 +30,6 @@
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

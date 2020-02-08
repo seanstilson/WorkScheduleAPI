@@ -1,29 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {}
+    "/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {}
   },
   "projects": {
-    "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {
+    "/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
+        "projectUniqueName": "/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
         "projectName": "WorkScheduleAPI",
-        "projectPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
-        "packagesPath": "/Users/seanstilson/.nuget/packages/",
-        "outputPath": "/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/obj/",
+        "projectPath": "/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/WorkScheduleAPI.csproj",
+        "packagesPath": "/Users/austinlaszewski/.nuget/packages/",
+        "outputPath": "/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/seanstilson/.config/NuGet/NuGet.Config"
+          "/Users/austinlaszewski/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "/Users/seanstilson/Downloads": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }

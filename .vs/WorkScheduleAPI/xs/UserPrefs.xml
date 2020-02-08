@@ -1,25 +1,18 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
-  <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Controllers/JobScheduleController.cs">
     <Files>
-      <File FileName="WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" Line="13" Column="95" />
-      <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="39" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/WorkScheduleItem.cs" Line="20" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/Assignee.cs" Line="7" Column="1" />
-      <File FileName="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" Line="30" Column="1" />
-      <File FileName="WorkScheduleAPI/Controllers/WorkScheduleController.cs" Line="39" Column="1" />
-      <File FileName="WorkScheduleAPI/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Startup.cs" Line="62" Column="1" />
+      <File FileName="WorkScheduleAPI/Properties/launchSettings.json" Line="30" Column="2" />
+      <File FileName="WorkScheduleAPI/Controllers/WorkScheduleController.cs" Line="49" Column="1" />
+      <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" />
+      <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="107" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WorkScheduleAPI" expanded="True">
             <Node name="WorkScheduleAPI" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
                 <Node name="JobScheduleController.cs" selected="True" />
               </Node>
@@ -40,7 +33,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" relfile="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" line="21" column="1" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" relfile="WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" line="12" column="1" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" relfile="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" line="21" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

@@ -60,7 +60,6 @@ namespace WorkScheduleAPI.Controllers
                 return;
             }
                 
-
             List<Entities.WorkScheduleItem> items = new List<Entities.WorkScheduleItem>();
             Entities.WorkScheduleItem newitem = _mapper.Map<Entities.WorkScheduleItem>(jobSchedule.DesignItem);
             items.Add(newitem);
@@ -68,7 +67,6 @@ namespace WorkScheduleAPI.Controllers
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.ReviewItem));
             items.Add(_mapper.Map<Entities.WorkScheduleItem>(jobSchedule.TransportationItem));
 
-            
             items.ForEach(i =>
             {
                
@@ -79,9 +77,7 @@ namespace WorkScheduleAPI.Controllers
                     return;
                 }
                     
-            });
-
-            
+            }); 
 
         }
 

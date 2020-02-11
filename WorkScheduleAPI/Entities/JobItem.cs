@@ -8,7 +8,7 @@ namespace WorkScheduleAPI.Entities
     public class JobItem
     {
         [Key]
-        public Guid JobID { get; set; }
+        public Guid JobItemId { get; set; }
 
         [Required]
         public string JobName { get; set; }

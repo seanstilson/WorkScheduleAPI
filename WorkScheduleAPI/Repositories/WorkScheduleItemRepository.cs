@@ -7,9 +7,9 @@ namespace WorkScheduleAPI.Repositories
 {
     public class WorkScheduleItemRepository : IWorkScheduleItemRepository<WorkScheduleItem>
     {
-        private WorkScheduleContext _workScheduleContext;
+        private StudContext _workScheduleContext;
 
-        public WorkScheduleItemRepository(WorkScheduleContext context)
+        public WorkScheduleItemRepository(StudContext context)
         {
             _workScheduleContext = context;
         }

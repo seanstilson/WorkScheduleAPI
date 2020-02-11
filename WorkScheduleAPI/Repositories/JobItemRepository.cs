@@ -11,9 +11,9 @@ namespace WorkScheduleAPI.Repositories
 {
     public class JobItemRepository : IJobItemRepository<JobItem>
     {
-        readonly WorkScheduleContext _workContext;
+        readonly StudContext _workContext;
 
-        public JobItemRepository(WorkScheduleContext context)
+        public JobItemRepository(StudContext context)
         {
             _workContext = context;
         }

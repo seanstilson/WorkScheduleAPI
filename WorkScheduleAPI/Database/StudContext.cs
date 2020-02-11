@@ -4,9 +4,9 @@ using WorkScheduleAPI.Entities;
 
 namespace WorkScheduleAPI.Database
 {
-    public class WorkScheduleContext : DbContext
+    public class StudContext : DbContext
     {
-        public WorkScheduleContext(DbContextOptions<WorkScheduleContext> options) : base(options)
+        public StudContext(DbContextOptions<StudContext> options) : base(options)
         {
         }
 

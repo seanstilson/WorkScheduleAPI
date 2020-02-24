@@ -9,21 +9,21 @@ using WorkScheduleAPI.Entities;
 
 namespace WorkScheduleAPI.Repositories
 {
-    public class JobItemRepository : IJobItemRepository<JobItem>
+    public class JobItemRepository : IJobItemRepository<JobItemEntity>
     {
-        readonly StudContext _workContext;
+        readonly StudContext _studContext;
 
         public JobItemRepository(StudContext context)
         {
-            _workContext = context;
+            _studContext = context;
         }
 
-        public bool AddJobItemAsync(JobItem jobItem)
+        public bool AddJobItemAsync(JobItemEntity entity)
         {
             try
             {
-                _workContext.JobItem.Add(jobItem);
-                _workContext.SaveChanges();
+                _studContext.JobItem.Add(entity);
+                _studContext.SaveChanges();
                 return true;
             }
             catch (SqlException ex)
@@ -34,11 +34,11 @@ namespace WorkScheduleAPI.Repositories
 
             
         }
-        public List<JobItem> GetJobItems(string jobType)
+        public List<JobItemEntity> GetJobItems(string jobType)
         {
             try
             {
-                var jobs = _workContext.JobItem.Where(ji => ji.SelectedJobType == jobType).ToList();
+                var jobs = _studContext.JobItem.Where(ji => ji.SelectedJobType == jobType).ToList();
                 return jobs;
             }
             catch (SqlException ex)

@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WorkScheduleAPI.Entities;
+using WorkScheduleAPI.Models;
 using WorkScheduleAPI.Repositories;
+using WorkScheduleAPI.Extensions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,9 +15,9 @@ namespace WorkScheduleAPI.Controllers
     [Route("api/[controller]")]
     public class JobItemController : Controller
     {
-        private readonly IJobItemRepository<JobItem> _jobItemRepository;
+        private readonly IJobItemRepository<JobItemEntity> _jobItemRepository;
 
-        public JobItemController(IJobItemRepository<JobItem> repository)
+        public JobItemController(IJobItemRepository<JobItemEntity> repository)
         {
             _jobItemRepository = repository;
         }
@@ -29,16 +31,18 @@ namespace WorkScheduleAPI.Controllers
         // GET api/values/5
         [HttpGet()]
         [Route("/api/JobItem/jobType/{jobType}")]
-        public List<JobItem> Get(string jobType)
+        public List<JobItemEntity> Get(string jobType)
         {
             return _jobItemRepository.GetJobItems(jobType);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]JobItem item)
+        public void Post([FromBody]JobItemModel jobItemModel)
         {
-            _jobItemRepository.AddJobItemAsync(item);
+
+            Entities.JobItemEntity jobItemEntity = JobItemExtension.ToEntity(jobItemModel);
+            _jobItemRepository.AddJobItemAsync(jobItemEntity);
         }
 
         // PUT api/values/5
@@ -52,5 +56,8 @@ namespace WorkScheduleAPI.Controllers
         public void Delete(int id)
         {
         }
+
+
+
     }
 }

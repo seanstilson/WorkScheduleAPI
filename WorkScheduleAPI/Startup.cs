@@ -32,8 +32,11 @@ namespace WorkScheduleAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            
             services.AddDbContext<StudContext>(op => op.UseSqlServer(Configuration["ConnectionString:StudDB"]));
-            services.AddScoped<IJobItemRepository<JobItem>, JobItemRepository>();
+
+            services.AddScoped<IJobItemRepository<JobItemEntity>, JobItemRepository>();
             services.AddAutoMapper(c => c.AddProfile<WorkScheduleMapping>(), typeof(Startup));
             services.AddScoped<IWorkScheduleItemRepository<WorkScheduleItem>, WorkScheduleItemRepository>();
             services.AddScoped<IJobScheduleRepository<JobSchedule>, JobScheduleRepository>();

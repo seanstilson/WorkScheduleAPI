@@ -1,16 +1,23 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Models/WorkScheduleItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Models/JobItemModel.cs">
     <Files>
-      <File FileName="WorkScheduleAPI/Controllers/WorkScheduleController.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/JobSchedule.cs" Line="20" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/WorkScheduleItem.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/Department.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Models/Assignee.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Entities/WorkScheduleItem.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Entities/JobSchedule.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" Line="39" Column="40" />
+      <File FileName="WorkScheduleAPI/Models/JobItemModel.cs" Line="30" Column="1" NotebookId="2" />
+      <File FileName="WorkScheduleAPI/Entities/JobItem.cs" Line="8" Column="31" NotebookId="3" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="2572" Y="24" Width="2018" Height="1371">
+        <Files>
+          <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="49" Column="27" />
+          <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" Line="38" Column="1" />
+          <File FileName="WorkScheduleAPI/Repositories/JobItemRepository.cs" Line="26" Column="1" NotebookId="1" />
+          <File FileName="WorkScheduleAPI/Database/StudContext.cs" NotebookId="1" />
+          <File FileName="WorkScheduleAPI/Repositories/JobScheduleRepository.cs" NotebookId="1" />
+          <File FileName="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" NotebookId="1" />
+          <File FileName="WorkScheduleAPI/Extensions/JobItemExtension.cs" Line="11" Column="45" NotebookId="1" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -20,9 +27,10 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Database" expanded="True" />
               <Node name="Entities" expanded="True" />
+              <Node name="Extensions" expanded="True" />
               <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="WorkScheduleItem.cs" selected="True" />
+                <Node name="JobItemModel.cs" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
@@ -37,9 +45,17 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" relfile="WorkScheduleAPI/Mappers/WorkScheduleMapping.cs" line="12" column="1" />
       <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" relfile="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" line="21" column="1" />
       <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="55" column="12" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" relfile="WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" line="42" column="54" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" relfile="WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" line="41" column="23" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="72" column="32" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="73" column="91" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Models/plpkv9ba.2xf~" relfile="WorkScheduleAPI/Models/plpkv9ba.2xf~" line="43" column="1" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Models/plpkv9ba.2xf~" relfile="WorkScheduleAPI/Models/plpkv9ba.2xf~" line="42" column="1" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/JobItemRepository.cs" relfile="WorkScheduleAPI/Repositories/JobItemRepository.cs" line="25" column="51" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/45tf0pbg.jv5~" relfile="WorkScheduleAPI/Repositories/45tf0pbg.jv5~" line="51" column="28" />
+      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/45tf0pbg.jv5~" relfile="WorkScheduleAPI/Repositories/45tf0pbg.jv5~" line="44" column="86" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

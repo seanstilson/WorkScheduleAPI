@@ -12,6 +12,7 @@
     <Folder Include="Repositories\" />
     <Folder Include="Mappers\" />
     <Folder Include="Extensions\" />
+    <Folder Include="DatabaseScripts\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />

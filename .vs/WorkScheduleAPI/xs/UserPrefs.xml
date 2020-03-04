@@ -1,37 +1,16 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Models/JobItemModel.cs">
-    <Files>
-      <File FileName="WorkScheduleAPI/Models/JobItemModel.cs" Line="30" Column="1" NotebookId="2" />
-      <File FileName="WorkScheduleAPI/Entities/JobItem.cs" Line="8" Column="31" NotebookId="3" />
-    </Files>
-    <FloatingWindows>
-      <FloatingWindow WindowId="1" X="2572" Y="24" Width="2018" Height="1371">
-        <Files>
-          <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="49" Column="27" />
-          <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" Line="38" Column="1" />
-          <File FileName="WorkScheduleAPI/Repositories/JobItemRepository.cs" Line="26" Column="1" NotebookId="1" />
-          <File FileName="WorkScheduleAPI/Database/StudContext.cs" NotebookId="1" />
-          <File FileName="WorkScheduleAPI/Repositories/JobScheduleRepository.cs" NotebookId="1" />
-          <File FileName="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" NotebookId="1" />
-          <File FileName="WorkScheduleAPI/Extensions/JobItemExtension.cs" Line="11" Column="45" NotebookId="1" />
-        </Files>
-      </FloatingWindow>
-    </FloatingWindows>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WorkScheduleAPI" expanded="True">
             <Node name="WorkScheduleAPI" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Database" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Extensions" expanded="True" />
-              <Node name="Mappers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="JobItemModel.cs" selected="True" />
+              <Node name="DatabaseScripts" expanded="True">
+                <Node name="STUD_STATIC_INSERT.sql" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="appsettings.json" expanded="True" />

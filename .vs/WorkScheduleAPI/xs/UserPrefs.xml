@@ -1,15 +1,24 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Entities/Department.cs">
+    <Files>
+      <File FileName="WorkScheduleAPI/Models/Department.cs" Line="1" Column="1" />
+      <File FileName="WorkScheduleAPI/Entities/Department.cs" Line="21" Column="1" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WorkScheduleAPI" expanded="True">
             <Node name="WorkScheduleAPI" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="DatabaseScripts" expanded="True">
-                <Node name="STUD_STATIC_INSERT.sql" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Database" expanded="True" />
+              <Node name="DatabaseScripts" expanded="True" />
+              <Node name="Entities" expanded="True" selected="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
@@ -23,19 +32,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" relfile="WorkScheduleAPI/Repositories/WorkScheduleItemRepository.cs" line="21" column="1" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="55" column="12" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" relfile="WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" line="42" column="54" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" relfile="WorkScheduleAPI/Repositories/x6nmb2pr.kzx~" line="41" column="23" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="72" column="32" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Controllers/JobScheduleController.cs" relfile="WorkScheduleAPI/Controllers/JobScheduleController.cs" line="73" column="91" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Models/plpkv9ba.2xf~" relfile="WorkScheduleAPI/Models/plpkv9ba.2xf~" line="43" column="1" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Models/plpkv9ba.2xf~" relfile="WorkScheduleAPI/Models/plpkv9ba.2xf~" line="42" column="1" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/JobItemRepository.cs" relfile="WorkScheduleAPI/Repositories/JobItemRepository.cs" line="25" column="51" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/45tf0pbg.jv5~" relfile="WorkScheduleAPI/Repositories/45tf0pbg.jv5~" line="51" column="28" />
-      <Breakpoint file="/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/Repositories/45tf0pbg.jv5~" relfile="WorkScheduleAPI/Repositories/45tf0pbg.jv5~" line="44" column="86" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace WorkScheduleAPI.Entities
 {
     [Table("JobItem", Schema="dbo")]
-    public class JobItemEntity
+    public class JobItem
     {
         [Key]
         public Guid JobItemId { get; set; }

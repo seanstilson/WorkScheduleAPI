@@ -36,10 +36,13 @@ namespace WorkScheduleAPI
             
             services.AddDbContext<StudContext>(op => op.UseSqlServer(Configuration["ConnectionString:StudDB"]));
 
-            services.AddScoped<IJobItemRepository<JobItemEntity>, JobItemRepository>();
+            services.AddScoped<IJobItemRepository<JobItem>, JobItemRepository>();
+            
+
             services.AddAutoMapper(c => c.AddProfile<WorkScheduleMapping>(), typeof(Startup));
             services.AddScoped<IWorkScheduleItemRepository<WorkScheduleItem>, WorkScheduleItemRepository>();
             services.AddScoped<IJobScheduleRepository<JobSchedule>, JobScheduleRepository>();
+            services.AddScoped<IDepartmentRepository<Department>, DepartmentRepository>();
 
             services.AddSwaggerDocument();
         }

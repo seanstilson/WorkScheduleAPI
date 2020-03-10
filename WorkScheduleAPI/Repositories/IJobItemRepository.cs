@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using WorkScheduleAPI.Entities;
 
 namespace WorkScheduleAPI.Repositories
 {
@@ -9,6 +7,6 @@ namespace WorkScheduleAPI.Repositories
     {
         bool AddJobItemAsync(T jobItem);
 
-        List<T> GetJobItems(string jobType);
+        List<Models.JobItem> GetJobItems(string jobType);
     }
 }

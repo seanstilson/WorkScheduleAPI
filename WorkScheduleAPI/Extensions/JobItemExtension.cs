@@ -1,6 +1,5 @@
 ﻿using System;
-using WorkScheduleAPI.Models;
-using WorkScheduleAPI.Entities;
+using System.Collections.Generic;
 
 
 namespace WorkScheduleAPI.Extensions
@@ -8,9 +7,9 @@ namespace WorkScheduleAPI.Extensions
     public static class JobItemExtension
     {
 
-        public static Entities.JobItemEntity ToEntity(JobItemModel model)
+        public static Entities.JobItem ToEntity(this Models.JobItem  model)
         {
-            Entities.JobItemEntity entity = new Entities.JobItemEntity()
+            Entities.JobItem entity = new Entities.JobItem()
             {
                 JobItemId               = model.JobItemId,
                 JobName                 = model.JobName,
@@ -27,7 +26,43 @@ namespace WorkScheduleAPI.Extensions
             };
             
             return entity;
-
         }
+
+        public static Models.JobItem ToModel(this Entities.JobItem entity)
+        {
+            Models.JobItem model = new Models.JobItem()
+            {
+                JobItemId               = entity.JobItemId,
+                JobName                 = entity.JobName,
+                SelectedJobType         = entity.SelectedJobType,
+                SelectedPhase           = entity.SelectedPhase,
+                SelectedBuildingSystem  = entity.SelectedBuildingSystem,
+                DeliveryDate            = entity.DeliveryDate,
+                RoundTripMiles          = entity.RoundTripMiles,
+                HasWindows              = entity.HasWindows,
+                WindowsInstalled        = entity.WindowsInstalled,
+                WindowDeliveryDate      = entity.WindowDeliveryDate,
+                WallBoardFeet           = entity.WallBoardFeet,
+                FloorSquareFeet         = entity.FloorSquareFeet
+            };
+
+            return model;
+        }
+
+        //Convert List of Entities to List of Models
+        public static List<Models.JobItem> ToModels(this List <Entities.JobItem> entities)
+        {
+            List<Models.JobItem> newJobItems = new List<Models.JobItem>();
+
+            foreach (Entities.JobItem oldJobItem in entities)
+            {
+                newJobItems.Add(oldJobItem.ToModel());
+            }
+            return newJobItems;
+        }
+
+
+
+
     }
 }

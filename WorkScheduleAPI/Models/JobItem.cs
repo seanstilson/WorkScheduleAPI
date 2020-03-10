@@ -6,7 +6,7 @@ using WorkScheduleAPI;
 namespace WorkScheduleAPI.Models
 {
 
-    public class JobItemModel
+    public class JobItem
     {
 
         public Guid JobItemId { get; set; }

@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using WorkScheduleAPI.Database;
-using WorkScheduleAPI.Entities;
+using WorkScheduleAPI.Extensions;
 
 namespace WorkScheduleAPI.Repositories
 {
-    public class JobItemRepository : IJobItemRepository<JobItemEntity>
+    public class JobItemRepository : IJobItemRepository<Entities.JobItem>
     {
         readonly StudContext _studContext;
 
@@ -18,7 +17,7 @@ namespace WorkScheduleAPI.Repositories
             _studContext = context;
         }
 
-        public bool AddJobItemAsync(JobItemEntity entity)
+        public bool AddJobItemAsync(Entities.JobItem  entity)
         {
             try
             {
@@ -31,23 +30,22 @@ namespace WorkScheduleAPI.Repositories
                 Debug.WriteLine(ex.StackTrace);
                 return false;
             }
-
             
         }
-        public List<JobItemEntity> GetJobItems(string jobType)
+
+        public List<Models.JobItem> GetJobItems(string selectedJobType)
         {
             try
             {
-                var jobs = _studContext.JobItem.Where(ji => ji.SelectedJobType == jobType).ToList();
-                return jobs;
+                List<Entities.JobItem> jobItems = _studContext.JobItem.Where(w => w.SelectedJobType == selectedJobType).ToList();
+                return jobItems.ToModels();
             }
             catch (SqlException ex)
             {
                 Debug.WriteLine(ex.StackTrace);
                 return null;
             }
-
-
         }
+
     }
 }

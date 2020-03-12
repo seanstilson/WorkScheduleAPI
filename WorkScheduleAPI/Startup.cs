@@ -43,6 +43,7 @@ namespace WorkScheduleAPI
             services.AddScoped<IWorkScheduleItemRepository<WorkScheduleItem>, WorkScheduleItemRepository>();
             services.AddScoped<IJobScheduleRepository<JobSchedule>, JobScheduleRepository>();
             services.AddScoped<IDepartmentRepository<Department>, DepartmentRepository>();
+            services.AddScoped<IBuildingSystemCodeRepository<BuildingSystemCode>, BuildingSystemCodeRepository>();
 
             services.AddSwaggerDocument();
         }

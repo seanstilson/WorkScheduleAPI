@@ -14,5 +14,6 @@ namespace WorkScheduleAPI.Database
         public DbSet<JobSchedule>JobSchedule { get; set; }
         public DbSet<WorkScheduleItem>WorkScheduleItem { get; set; }
         public DbSet<Department> Department { get; set; }
+        public DbSet<BuildingSystemCode> BuildingSystemCode { get; set; }
     }
 }

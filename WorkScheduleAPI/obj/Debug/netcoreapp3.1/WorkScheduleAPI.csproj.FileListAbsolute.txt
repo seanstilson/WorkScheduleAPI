@@ -125,3 +125,4 @@
 /Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.csproj.CopyComplete
 /Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.dll
 /Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.pdb
+/Users/austinlaszewski/Desktop/GIT/workscheduleAPI/WorkScheduleAPI/obj/Debug/netcoreapp3.1/WorkScheduleAPI.csprojAssemblyReference.cache

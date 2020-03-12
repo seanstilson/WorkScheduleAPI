@@ -17,17 +17,27 @@ namespace WorkScheduleAPI.Controllers
     public class StaticManController : Controller
     {
         private IDepartmentRepository<Entities.Department> _departmentRepository;
+        private IBuildingSystemCodeRepository<Entities.BuildingSystemCode> _buildingSystemCodeRepository;
 
-        public StaticManController(IDepartmentRepository<Entities.Department> repository)
+        public StaticManController( IDepartmentRepository<Entities.Department> departmentRepository,
+                                    IBuildingSystemCodeRepository<Entities.BuildingSystemCode> buildingSystemCodeRepository)
         {
-            _departmentRepository = repository;
+            _departmentRepository           = departmentRepository;
+            _buildingSystemCodeRepository   = buildingSystemCodeRepository;
         }
 
         [HttpGet()]
         [Route("/api/Static/department")]
-        public List<Models.Department> Get()
+        public List<Models.Department> GetDepartment()
         {
             return _departmentRepository.GetDepartments();
+        }
+
+        [HttpGet()]
+        [Route("/api/Static/buildingSystemCode")]
+        public List<Models.BuildingSystemCode> GetBuildingSystemCode()
+        {
+            return _buildingSystemCodeRepository.GetBuildingSystemCodes();
         }
 
 

@@ -54,7 +54,7 @@ Department: Define all Departements that exist
 CREATE TABLE dbo.Department
 (
     DepartmentId                UNIQUEIDENTIFIER            NOT NULL PRIMARY KEY
-    ,DepartmentName             VARCHAR(255)                NULL            
+    ,DepartmentName             VARCHAR(255)                NOT NULL            
 );
 
 

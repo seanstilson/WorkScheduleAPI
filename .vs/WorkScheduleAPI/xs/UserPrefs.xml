@@ -1,10 +1,23 @@
 ﻿<Properties StartupConfiguration="{7E9A8286-5540-4ADB-9B56-7E8F74E43375}|Default">
   <MonoDevelop.Ide.ItemProperties.WorkScheduleAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Entities/Department.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkScheduleAPI/Controllers/JobScheduleController.cs">
     <Files>
-      <File FileName="WorkScheduleAPI/Models/Department.cs" Line="1" Column="1" />
-      <File FileName="WorkScheduleAPI/Entities/Department.cs" Line="21" Column="1" NotebookId="1" />
+      <File FileName="WorkScheduleAPI/Models/Department.cs" Line="2" Column="1" NotebookId="2" />
+      <File FileName="WorkScheduleAPI/Entities/Department.cs" NotebookId="2" />
+      <File FileName="WorkScheduleAPI/Models/BuildingSystemCode.cs" Line="9" Column="6" NotebookId="2" />
+      <File FileName="WorkScheduleAPI/Startup.cs" Line="49" Column="10" NotebookId="2" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="2570" Y="23" Width="2379" Height="1349">
+        <Files>
+          <File FileName="WorkScheduleAPI/Repositories/IJobItemRepository.cs" Line="12" Column="2" />
+          <File FileName="WorkScheduleAPI/Controllers/JobScheduleController.cs" Line="20" Column="91" />
+          <File FileName="WorkScheduleAPI/Controllers/JobItemController.cs" Line="1" Column="1" />
+          <File FileName="WorkScheduleAPI/Database/StudContext.cs" Line="20" Column="1" NotebookId="1" />
+          <File FileName="WorkScheduleAPI/Controllers/StaticManController.cs" Line="48" Column="1" NotebookId="1" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -13,10 +26,12 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="JobScheduleController.cs" selected="True" />
+              </Node>
               <Node name="Database" expanded="True" />
               <Node name="DatabaseScripts" expanded="True" />
-              <Node name="Entities" expanded="True" selected="True" />
+              <Node name="Entities" expanded="True" />
               <Node name="Extensions" expanded="True" />
               <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True" />

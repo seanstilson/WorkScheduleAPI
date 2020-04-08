@@ -1,7 +1,6 @@
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-/Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/WorkScheduleAPI
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/WorkScheduleAPI.deps.json
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/WorkScheduleAPI.runtimeconfig.json
 /Users/seanstilson/source/repos/WorkScheduleAPI/WorkScheduleAPI/bin/Debug/netcoreapp3.1/WorkScheduleAPI.runtimeconfig.dev.json
